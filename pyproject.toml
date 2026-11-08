@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-tool-lab-booking"
+version = "0.1.0"
+description = "Teaching laboratory booking MVP"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+
+[tool.setuptools.package-data]
+my_tool = ["static/*.html", "static/*.css", "static/*.js"]
+

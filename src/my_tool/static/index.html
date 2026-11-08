@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高校实验室预约管理</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">课程项目 · 最小可运行版本</p>
+      <h1>高校实验室预约管理</h1>
+      <p>查看可用实验室，提交预约并自动检查时段冲突。</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="card" aria-labelledby="labs-title">
+      <div class="section-head"><h2 id="labs-title">实验室</h2><span>开放时间 08:00—22:00</span></div>
+      <div id="labs" class="lab-grid" aria-live="polite"></div>
+    </section>
+    <div class="columns">
+      <section class="card" aria-labelledby="form-title">
+        <h2 id="form-title">新建预约</h2>
+        <form id="booking-form">
+          <label>实验室<select name="lab_id" id="lab-select" required></select></label>
+          <label>预约人<input name="requester" maxlength="40" required placeholder="请输入姓名"></label>
+          <label>用途<input name="purpose" maxlength="120" required placeholder="例如 课程实验"></label>
+          <label>参加人数<input name="participants" type="number" min="1" required value="1"></label>
+          <div class="form-row">
+            <label>开始时间<input name="start" type="datetime-local" required></label>
+            <label>结束时间<input name="end" type="datetime-local" required></label>
+          </div>
+          <p class="hint">单次最长 4 小时；相同实验室的时间不能重叠。</p>
+          <button type="submit">提交预约</button>
+          <p id="message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="card" aria-labelledby="booking-title">
+        <div class="section-head"><h2 id="booking-title">当前预约</h2><button id="refresh" class="subtle" type="button">刷新</button></div>
+        <div id="bookings" aria-live="polite"></div>
+      </section>
+    </div>
+    <p class="footnote">演示系统：使用样例数据。正式校内使用需接入身份认证、审批与安全准入。</p>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
+

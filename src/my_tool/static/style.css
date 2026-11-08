@@ -1,0 +1,15 @@
+:root{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;color:#17232f;background:#f4f7fa}
+*{box-sizing:border-box}body{margin:0}header{background:#123c59;color:#fff;padding:38px 0 44px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}.eyebrow{font-size:13px;letter-spacing:.12em;opacity:.8;margin:0 0 8px}
+h1{font-size:32px;margin:0 0 9px}header p:last-child{margin:0;color:#d6e6ef}
+main{padding-top:28px!important;padding-bottom:48px!important}.card{background:#fff;border:1px solid #dce4eb;border-radius:12px;box-shadow:0 3px 14px #153a570d;padding:24px;margin-bottom:20px}
+h2{font-size:20px;margin:0 0 18px}.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.section-head span,.hint,.footnote{font-size:13px;color:#627587}
+.lab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:12px}.lab{border:1px solid #dce4eb;border-radius:8px;padding:14px}.lab strong{display:block;margin-bottom:5px}.lab small{color:#627587}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}.columns .card{min-width:0}
+label{display:block;font-size:14px;font-weight:600;margin:0 0 14px}input,select{font:inherit;width:100%;display:block;border:1px solid #bac9d6;border-radius:7px;padding:10px;margin-top:6px;background:#fff;color:#17232f}
+input:focus,select:focus{outline:2px solid #3485b8;outline-offset:1px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hint{margin:2px 0 16px}
+button{border:0;border-radius:7px;background:#15668f;color:#fff;font:inherit;font-weight:600;padding:10px 16px;cursor:pointer}button:hover{background:#0e5275}button.subtle{background:#e7f0f5;color:#155a7f;padding:7px 12px;font-size:13px}
+#message{min-height:20px;font-size:14px;margin:12px 0 0}#message.error{color:#ad2831}#message.ok{color:#16663c}
+.booking{border-bottom:1px solid #e3e9ee;padding:12px 0}.booking:first-child{padding-top:0}.booking:last-child{border:0}.booking strong{display:block;margin-bottom:4px}.booking small{color:#627587;display:block;line-height:1.6}.booking button{margin-top:8px;background:#f4e8e8;color:#9c2929;padding:5px 10px;font-size:12px}.empty{color:#627587;font-size:14px}.footnote{margin-top:8px}
+@media(max-width:760px){.columns,.form-row{grid-template-columns:1fr}header{padding:28px 0}h1{font-size:26px}.card{padding:18px}}
+

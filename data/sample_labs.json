@@ -1,0 +1,6 @@
+[
+  {"name": "软件工程实验室 A101", "capacity": 30, "location": "教学楼 A101"},
+  {"name": "创新实践实验室 B202", "capacity": 20, "location": "创新楼 B202"},
+  {"name": "数据分析实验室 C305", "capacity": 24, "location": "信息楼 C305"}
+]
+
